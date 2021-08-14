@@ -1,11 +1,12 @@
-const Manager = require('./manager');
-const Engineer = require('./engineer');
-const Employee = require('./employee');
-const Intern = require('./intern');
+const Manager = require('./lib/manager');
+const Engineer = require('./lib/engineer');
+const Employee = require('./lib/employee');
+const Intern = require('./lib/intern');
 const inquirer = require('inquirer');
-const fd = require('fs');
+const renderHtml = require('./templates/templates')
+const fs = require('fs');
 const { inherits } = require('util');
-const employees = [];
+let employees = [];
 
 // add prompt to enter the team manager’s name, employee ID, email address, and office number when app opens
 init = () => {
@@ -34,8 +35,9 @@ return inquirer
     }
 ]).then((response)=> {
     response.role = 'Manager';
+    const manager = new Manager(response.name, response.id, response.email, response.officeNumber);
+    employees.push(manager);
     employeeRole();
-    employeees.push();
 })
 };
 
@@ -89,7 +91,8 @@ addEngineer = () => {
         }
     ]).then((response)=> {
     response.role = 'Engineer';
-    employeees.push();
+    const engineer = new Engineer(response.name, response.id, response.email, response.github);
+    employees.push(engineer);
     addEmployee();
 })
 };
@@ -120,7 +123,8 @@ addIntern = () => {
         }
     ]).then((response)=> {
         response.role = 'Intern';
-        employeees.push();
+        const intern = new Intern(response.name, response.id, response.email, response.school);
+        employees.push(intern);
         addEmployee();
 })
 };
@@ -139,10 +143,10 @@ addEmployee = () => {
             ]
         }
     ]).then(response => {
-    if (response.add = 'Yes') {
+    if (response.add === 'Yes') {
         employeeRole();
-    } else {
-
+    } else { 
+        renderEmployees();
     }
     
     
@@ -151,7 +155,14 @@ addEmployee = () => {
 
 // build html 
 renderEmployees = () => {
-    const renderHtml = render(employees);
+    const employeeTemplate = renderHtml(employees);
+    fs.writeFile('./dist/index.html', employeeTemplate, (error) => {
+        if (error) {
+            console.log("error!")
+        } else {
+            console.log("success!");
+        }
+    })
 }
 
 init();
