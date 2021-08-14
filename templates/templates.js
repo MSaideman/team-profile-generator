@@ -1,5 +1,5 @@
 function managerCard (manager) {
-    return `<div class='card text-white bg-info mb-3' style="max-width: 18rem;">
+    return `<div class='card text-white bg-info mb-3 text-center col-12 d-flex justify-content-center' style="max-width: 18rem;">
     <div class='card-header'>
     ${manager.getRole()}
     </div>
@@ -13,7 +13,7 @@ function managerCard (manager) {
 }
 
 function engineerCard (engineer) {
-    return `<div class='card text-white bg-info mb-3' style="max-width: 18rem;">
+    return `<div class='card text-white bg-info mb-3 text-center col-12 d-flex justify-content-center' style="max-width: 18rem;">
     <div class='card-header'>
     ${engineer.getRole()}
     </div>
@@ -27,7 +27,7 @@ function engineerCard (engineer) {
 }
 
 function internCard (intern) {
-    return `<div class='card text-white bg-info mb-3' style="max-width: 18rem;">
+    return `<div class='card text-white bg-info mb-3 text-center col-12 d-flex justify-content-center' style="max-width: 18rem;">
     <div class='card-header'>
     ${intern.getRole()}
     </div>
