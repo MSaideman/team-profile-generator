@@ -1,13 +1,13 @@
 function managerCard (manager) {
     return `<div class='card'>
     <div class='card-header'>
-    ${manager.getRole()}
+    <h2 class="card-title">${manager.getRole()}</h2>
     </div>
     <div class='card-body'>
-    ${manager.getName()}
-    ${manager.getId()}
-    ${manager.getEmail()}
-    ${manager.getOfficeNumber()}
+    <h3 class="card-title">${manager.getName()}</h3>
+    <p class="card-text">${manager.getId()}</p>
+    <p class="card-text">${manager.getEmail()}</p>
+    <p class="card-text">${manager.getOfficeNumber()}</p>
     </div>
 </div>`
 }
@@ -15,13 +15,13 @@ function managerCard (manager) {
 function engineerCard (engineer) {
     return `<div class='card'>
     <div class='card-header'>
-    ${engineer.getRole()}
+    <h2 class="card-title">${engineer.getRole()}</h2>
     </div>
     <div class='card-body'>
-    ${engineer.getName()}
-    ${engineer.getId()}
-    ${engineer.getEmail()}
-    ${engineer.getGithub()}
+    <h3 class="card-title">${engineer.getName()}</h3>
+    <p class="card-text">${engineer.getId()}</p>
+    <p class="card-text">${engineer.getEmail()}</p>
+    <p class="card-text">${engineer.getGithub()}</p>
     </div>
 </div>`
 }
@@ -29,13 +29,13 @@ function engineerCard (engineer) {
 function internCard (intern) {
     return `<div class='card'>
     <div class='card-header'>
-    ${intern.getRole()}
+    <h2 class="card-title">${intern.getRole()}</h2>
     </div>
     <div class='card-body'>
-    ${intern.getName()}
-    ${intern.getId()}
-    ${intern.getEmail()}
-    ${intern.getSchool()}
+    <h3 class="card-title">${intern.getName()}</h3>
+    <p class="card-text">${intern.getId()}</p>
+    <p class="card-text">${intern.getEmail()}</p>
+    <p class="card-text">${intern.getSchool()}</p>
     </div>
 </div>`
 }
