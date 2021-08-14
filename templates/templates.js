@@ -1,7 +1,7 @@
 function managerCard (manager) {
-    return `<div class='card'>
+    return `<div class='card text-white bg-info mb-3' style="max-width: 18rem;">
     <div class='card-header'>
-    <h2 class="card-title">${manager.getRole()}</h2>
+    ${manager.getRole()}
     </div>
     <div class='card-body'>
     <h3 class="card-title">${manager.getName()}</h3>
@@ -13,9 +13,9 @@ function managerCard (manager) {
 }
 
 function engineerCard (engineer) {
-    return `<div class='card'>
+    return `<div class='card text-white bg-info mb-3' style="max-width: 18rem;">
     <div class='card-header'>
-    <h2 class="card-title">${engineer.getRole()}</h2>
+    ${engineer.getRole()}
     </div>
     <div class='card-body'>
     <h3 class="card-title">${engineer.getName()}</h3>
@@ -27,9 +27,9 @@ function engineerCard (engineer) {
 }
 
 function internCard (intern) {
-    return `<div class='card'>
+    return `<div class='card text-white bg-info mb-3' style="max-width: 18rem;">
     <div class='card-header'>
-    <h2 class="card-title">${intern.getRole()}</h2>
+    ${intern.getRole()}
     </div>
     <div class='card-body'>
     <h3 class="card-title">${intern.getName()}</h3>
@@ -66,7 +66,9 @@ function renderHtml(teamMembers) {
     <body>
         <div class='container'>
             <div class='row'>
-    
+            <div class="col-12 jumbotron mb-3">
+            <h1 class="text-center">My Team</h1>
+        </div>
             </div>
         </div>
         <div class='container'>
