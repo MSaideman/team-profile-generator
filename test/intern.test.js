@@ -1,1 +1,2 @@
-intern.test.js
+const Intern = require('../lib/intern')
+
