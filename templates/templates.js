@@ -81,7 +81,7 @@ function renderHtml(teamMembers) {
                 </div>
             </div>
             <div class='row align-items-center'>
-                <div class="col-12 d-flex flex-row justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
                 ${employees}
                 </div>
             </div>
