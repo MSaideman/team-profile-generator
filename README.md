@@ -3,9 +3,28 @@
 - Github URL: https://github.com/MSaideman/team-profile-generator
 - Deployed URL: https://msaideman.github.io/team-profile-generator/
 
-## Video Tutorial
+## Description
 
-## Sample Page
+Team Profile Generator will create a website that will display your team member's profiles.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
+
+## Installation
+
+1. npm i inquirer
+2. npm i jest
+3. npm i bootstrap-icons
+
+## Usage
+
+I WANT to generate a webpage that displays my team's basic information, such as ID and email.
 
 ## User Story
 
@@ -36,3 +55,11 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
+
+## License
+
+This project is convered under the MIT License.
+
+## Questions
+
+For questions about this project, please reach out by email at mbsaideman@gmail.com.
