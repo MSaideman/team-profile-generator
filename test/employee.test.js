@@ -7,4 +7,10 @@ describe("Employee details",()=>{
         expect(typeof(obj)).toBe("object");
     })
     
-})});
+    describe("getName function",()=>{
+        it("should return name of employee", () =>{
+            const obj = new Employee('mackenzie');
+            expect(obj.getName()).toBe('mackenzie');
+        })
+
+})})});

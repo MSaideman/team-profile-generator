@@ -7,5 +7,12 @@ describe("Engineer details",()=>{
         expect(typeof(obj)).toBe("object");
     })
     
-})});
+    describe("getGithub function",()=>{
+        it("should return name of github", () =>{
+            const obj = new Engineer('mackenzie', '1', 'mbsaideman@gmail.com', 'MSaideman');
+            expect(obj.getGithub()).toBe('MSaideman');
+        })
+    })
+})
+});
 
