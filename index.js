@@ -118,7 +118,7 @@ addIntern = () => {
         },
         {
             type: "input",
-            message: "What schoold does the Intern go to?",
+            message: "What school does the Intern go to?",
             name: "school"
         }
     ]).then((response)=> {
