@@ -11,7 +11,7 @@ Team Profile Generator will create a website that will display your team member'
 
 ## Video Tutorial
 
-https://user-images.githubusercontent.com/82477037/129777492-702fe4d7-1e1b-49d8-ac4b-8e2bb7128e7f.mp4
+https://user-images.githubusercontent.com/82477037/129779828-4f79d586-3f41-4eea-92b0-bb84aacec48e.mp4
 
 ## Table of Contents
 
