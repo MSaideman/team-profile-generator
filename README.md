@@ -6,7 +6,8 @@
 ## Description
 
 Team Profile Generator will create a website that will display your team member's profiles.
-![screencapture-file-Users-mackenziesaideman-Bootcamp2021-ucsd-sd-virt-fsf-pt-06-2021-u-c-master-10-OOP-10-OOP-02-Homework-team-profile-generator-dist-index-html-2021-08-17-13_43_37](https://user-images.githubusercontent.com/82477037/129777389-aad894db-30d3-49a2-867d-826fe07259a4.png)
+
+![screencapture-file-Users-mackenziesaideman-Bootcamp2021-ucsd-sd-virt-fsf-pt-06-2021-u-c-master-10-OOP-10-OOP-02-Homework-team-profile-generator-dist-index-html-2021-08-17-14_15_36](https://user-images.githubusercontent.com/82477037/129779128-d5eed1e4-5929-49ee-a587-36c33fe4ab3f.png)
 
 ## Video Tutorial
 

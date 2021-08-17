@@ -10,7 +10,7 @@ function managerCard(manager) {
     <div class='card-body p-3 mb-2 text-white bg-secondary border-3 border-warning' >
       <h3 class="card-title">${manager.getName()}</h3>
       <p class="card-text">ID: ${manager.getId()}</p>
-      <a href="mailto:${manager.getEmail()}" class="card-text">${manager.getEmail()}</a>
+      <p><a href="mailto:${manager.getEmail()}" class="card-text">${manager.getEmail()}</a></p>
       <p class="card-text">Office Number: ${manager.getOfficeNumber()}</p>
     </div>
   </div>
@@ -30,8 +30,8 @@ function engineerCard(engineer) {
     <div class='card-body p-3 mb-2 text-white bg-secondary border-3 border-warning'>
       <h3 class="card-title">${engineer.getName()}</h3>
       <p class="card-text">ID: ${engineer.getId()}</p>
-      <a href="mailto:${engineer.getEmail()}" class="card-text">${engineer.getEmail()}</a>
-      <a href="https://github.com/${engineer.getGithub()}" class="card-text">GitHub:${engineer.getGithub()}</a>
+      <p><a href="mailto:${engineer.getEmail()}" class="card-text">${engineer.getEmail()}</a></p>
+      <p><a href="https://github.com/${engineer.getGithub()}" class="card-text">${engineer.getGithub()}</a></p>
     </div>
     </div>
 </div>`;
@@ -49,7 +49,7 @@ function internCard(intern) {
     <div class='card-body p-3 mb-2 text-white bg-secondary border-3 border-warning'>
       <h3 class="card-title">${intern.getName()}</h3>
       <p class="card-text">ID: ${intern.getId()}</p>
-      <a href="mailto:${intern.getEmail()}" class="card-text">${intern.getEmail()}</a>
+      <p><a href="mailto:${intern.getEmail()}" class="card-text">${intern.getEmail()}</a></p>
       <p class="card-text">School:${intern.getSchool()}</p>
     </div>
     </div>
