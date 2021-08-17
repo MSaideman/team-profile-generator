@@ -1,5 +1,6 @@
 function managerCard(manager) {
-  return `<div class='card text-white bg-info mb-3 text-center' style="max-width: 18rem;">
+  return `<div class="col-12 d-flex justify-content-center">
+  <div class='card text-white bg-info mb-3 text-center' style="max-width: 30%; padding: 1rem">
     <div class='card-header'>
     <h1>${manager.getRole()}</h1>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-binoculars" viewBox="0 0 16 16">
@@ -12,11 +13,13 @@ function managerCard(manager) {
     <p class="card-text">Email: ${manager.getEmail()}</p>
     <p class="card-text">Office Number: ${manager.getOfficeNumber()}</p>
     </div>
+    </div>
 </div>`;
 }
 
 function engineerCard(engineer) {
-  return `<div class='card text-white bg-info mb-3 text-center' style="max-width: 18rem;">
+  return `<div class="col-12 d-flex justify-content-center">
+  <div class='card text-white bg-info mb-3 text-center' style="max-width: 30%; padding: 1rem">
     <div class='card-header'>
     <h1>${engineer.getRole()}</h1>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-sunglasses" viewBox="0 0 16 16">
@@ -30,11 +33,13 @@ function engineerCard(engineer) {
     <p class="card-text">Email: ${engineer.getEmail()}</p>
     <p class="card-text">GitHub: ${engineer.getGithub()}</p>
     </div>
+    </div>
 </div>`;
 }
 
 function internCard(intern) {
-  return `<div class='card text-white bg-info mb-3 text-center' style="max-width: 18rem;">
+  return `<div class="col-12 d-flex justify-content-center">
+  <div class='card text-white bg-info mb-3 text-center' style="max-width: 30%; padding: 1rem">
     <div class='card-header'>
     <h1>${intern.getRole()}</h1>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
@@ -47,11 +52,12 @@ function internCard(intern) {
     <p class="card-text">Email: ${intern.getEmail()}</p>
     <p class="card-text">School:${intern.getSchool()}</p>
     </div>
+    </div>
 </div>`;
 }
 
 function renderHtml(teamMembers) {
-  let employees = "";
+  let employees = ``;
   for (let i = 0; i < teamMembers.length; i++) {
     if (teamMembers[i].getRole() === "Manager") {
       employees += managerCard(teamMembers[i]);
@@ -81,9 +87,7 @@ function renderHtml(teamMembers) {
                 </div>
             </div>
             <div class='row align-items-center'>
-                <div class="col-12 d-flex justify-content-center">
                 ${employees}
-                </div>
             </div>
         </div>
     </body>
